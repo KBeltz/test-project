@@ -1,0 +1,16 @@
+<form action="" [formGroup]="testForm">
+    <div>
+        <label for="firstName">First Name: </label>
+        <input type="text" formControlName="firstName">
+    </div>
+    <div>
+        <label for="lastName">Last Name: </label>
+        <input type="text" formControlName="lastName">
+    </div>
+    <div>
+        <label for="preferredName">Preferred Name: </label>
+        <input type="text" formControlName="preferredName">
+    </div>
+
+    {{ testForm.value | json }}
+</form>

@@ -11,6 +11,7 @@
         <label for="preferredName">Preferred Name: </label>
         <input type="text" formControlName="preferredName">
     </div>
-
     {{ testForm.value | json }}
 </form>
+<app-shipping-address></app-shipping-address>
+<app-billing-address></app-billing-address>

@@ -15,8 +15,11 @@ export class TestFormComponent implements OnInit {
     this.testForm = this.formBuilder.group({
       firstName : ['', [Validators.required]],
       lastName : ['', [Validators.required]],
-      preferredName: ['']
+      preferredName: [''],
     })
   }
 
+  onSubmit(): void {
+    console.log('Is form valid? ', this.testForm.valid)
+  }
 }

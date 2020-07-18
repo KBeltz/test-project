@@ -5,12 +5,16 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { TestFormComponent } from './test-form/test-form.component';
 import { AddressFormComponent } from './common/address-form/address-form.component';
+import { ShippingAddressComponent } from './test-form/shipping-address/shipping-address.component';
+import { BillingAddressComponent } from './test-form/billing-address/billing-address.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     TestFormComponent,
-    AddressFormComponent
+    AddressFormComponent,
+    ShippingAddressComponent,
+    BillingAddressComponent
   ],
   imports: [
     BrowserModule,

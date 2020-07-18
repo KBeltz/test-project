@@ -1,0 +1,7 @@
+<form action="" [formGroup]="shippingAddress">
+    <div>
+        <label for="shippingAddress">Shipping Address: </label>
+        <app-address-form></app-address-form>
+    </div>
+</form>
+{{ shippingAddress.value | json }}

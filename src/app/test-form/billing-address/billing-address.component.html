@@ -1,0 +1,7 @@
+<form action="" [formGroup]="billingAddress">
+    <div>
+        <label for="billingAddress">Billing Address: </label>
+        <app-address-form></app-address-form>
+    </div>
+</form>
+{{ billingAddress.value | json }}
